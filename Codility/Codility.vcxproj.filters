@@ -18,5 +18,49 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MissingInteger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryGap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CyclicRotation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OddOccurrencesInArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PermMissingElem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrogJmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TapeEquilibrium.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MissingInteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryGap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CyclicRotation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OddOccurrencesInArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PermMissingElem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrogJmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TapeEquilibrium.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

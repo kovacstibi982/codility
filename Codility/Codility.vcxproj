@@ -115,7 +115,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BinaryGap.cpp" />
+    <ClCompile Include="CyclicRotation.cpp" />
+    <ClCompile Include="FrogJmp.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MissingInteger.cpp" />
+    <ClCompile Include="OddOccurrencesInArray.cpp" />
+    <ClCompile Include="PermMissingElem.cpp" />
+    <ClCompile Include="TapeEquilibrium.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BinaryGap.h" />
+    <ClInclude Include="CyclicRotation.h" />
+    <ClInclude Include="FrogJmp.h" />
+    <ClInclude Include="MissingInteger.h" />
+    <ClInclude Include="OddOccurrencesInArray.h" />
+    <ClInclude Include="PermMissingElem.h" />
+    <ClInclude Include="TapeEquilibrium.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
