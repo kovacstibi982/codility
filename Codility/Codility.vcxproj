@@ -116,20 +116,30 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BinaryGap.cpp" />
+    <ClCompile Include="CountDiv.cpp" />
     <ClCompile Include="CyclicRotation.cpp" />
     <ClCompile Include="FrogJmp.cpp" />
+    <ClCompile Include="FrogRiverOne.cpp" />
+    <ClCompile Include="GenomicRangeQuery.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MaxCounters.cpp" />
     <ClCompile Include="MissingInteger.cpp" />
     <ClCompile Include="OddOccurrencesInArray.cpp" />
+    <ClCompile Include="PermCheck.cpp" />
     <ClCompile Include="PermMissingElem.cpp" />
     <ClCompile Include="TapeEquilibrium.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryGap.h" />
+    <ClInclude Include="CountDiv.h" />
     <ClInclude Include="CyclicRotation.h" />
     <ClInclude Include="FrogJmp.h" />
+    <ClInclude Include="FrogRiverOne.h" />
+    <ClInclude Include="GenomicRangeQuery.h" />
+    <ClInclude Include="MaxCounters.h" />
     <ClInclude Include="MissingInteger.h" />
     <ClInclude Include="OddOccurrencesInArray.h" />
+    <ClInclude Include="PermCheck.h" />
     <ClInclude Include="PermMissingElem.h" />
     <ClInclude Include="TapeEquilibrium.h" />
   </ItemGroup>

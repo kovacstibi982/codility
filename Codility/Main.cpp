@@ -6,9 +6,14 @@
 #include "PermMissingElem.h"
 #include "FrogJmp.h"
 #include "TapeEquilibrium.h"
+#include "PermCheck.h"
+#include "FrogRiverOne.h"
+#include "MaxCounters.h"
+#include "GenomicRangeQuery.h"
+#include "CountDiv.h"
 
 int main() {
-	
+
 	
 	return 0;
 }
@@ -55,5 +60,46 @@ void TapeEquilibrium() {
 	// TODO: two elements: got 0 expected 2000; small elements: got 0 expected 20
 	std::vector<int> v = { 3,1,2,4,3 };
 	int ret = TEsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void PermCheck() {
+	std::vector<int> v = { 4,1,3 };
+	int ret = PCsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void FrogRiverOne() {
+	// todo: 
+	int X = 5;
+	std::vector<int> v = { 1,3,1,4,2,3,5,4 };
+	int ret = FROsolution(X, v);
+	std::cout << ret << std::endl;
+}
+
+void MaxCounters() {
+
+	// TODO: arge random test, 10000 max_counter operations, all max_counter operations
+	std::vector<int> v = { 3,4,4,6,1,4,4 };
+	int N = 5;
+	std::vector<int> ret = MCsolution(N, v);
+	for (std::vector<int>::iterator it = ret.begin(); it != ret.end(); ++it)
+		std::cout << *it << std::endl;
+}
+
+void GenomicRangeQuery() {
+	// TODO: GGGGGG..??..GGGGGG..??..GGGGGG, large random string, length, all max ranges
+	std::string S = "CAGCCTA";
+	std::vector<int> P = { 2, 5, 0 };
+	std::vector<int> Q = { 4, 5, 6 };
+	std::vector<int> ret = GROsolution(S, P, Q);
+	for (std::vector<int>::iterator it = ret.begin(); it != ret.end(); ++it)
+		std::cout << *it << std::endl;
+}
+
+void CountDiv() {
+	//TODO: A = 100, B=123M+, K=2; A = 101, B = 123M+, K = 10K; A = 0, B = MAXINT, K in {1,MAXINT}
+	int A = 6, B = 11, K = 2;
+	int ret = CDsolution(A, B, K);
 	std::cout << ret << std::endl;
 }
