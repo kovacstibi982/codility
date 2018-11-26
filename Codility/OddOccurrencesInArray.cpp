@@ -37,7 +37,6 @@ int OOAsolution(std::vector<int> &A) {
 	// write your code in C++14 (g++ 6.2.0)
 	std::vector<int> pair;
 
-
 	for (std::vector<int>::iterator it = A.begin(); it != A.end(); ++it) {
 		auto fA = find(pair.begin(), pair.end(), *it);
 		if (fA != pair.end()) {
@@ -50,3 +49,16 @@ int OOAsolution(std::vector<int> &A) {
 
 	return pair[0];
 }
+
+int OOAsolution2(std::vector<int> &A) {
+	// write your code in C++14 (g++ 6.2.0)
+	int res = 0;
+
+	for (auto it = A.begin(); it != A.end(); ++it) {
+		res ^= *it;
+	}
+
+	return res;
+}
+
+// ^= operator

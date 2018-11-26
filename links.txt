@@ -1,0 +1,14 @@
+- MissingInteger: https://app.codility.com/demo/results/demo4UXZJ7-7HA/
+- Binry Gap: https://app.codility.com/demo/results/trainingWCYC3G-JMV/ || https://app.codility.com/demo/results/trainingX2TC3A-JWQ/
+- CyclicRotation: https://app.codility.com/demo/results/trainingBTC3PZ-JQB/ || https://app.codility.com/demo/results/trainingYKSJPZ-HEE/
+- OddOccurrencesInArray: https://app.codility.com/demo/results/trainingN72XUD-Q8V/ || https://app.codility.com/demo/results/training794X5K-U65/
+- PermMissingElem: https://app.codility.com/demo/results/trainingV56R2G-3UY/
+- FrogJmp: https://app.codility.com/demo/results/trainingA4EM6H-JEV/ || https://app.codility.com/demo/results/trainingWHZ3DY-MD4/
+- PermCheck: https://app.codility.com/demo/results/trainingW6XGQ2-9RP/
+- FrogRiverOne: https://app.codility.com/demo/results/training72SJY2-JU8/
+- MaxCounters: https://app.codility.com/demo/results/trainingVNDMK7-KM3/
+- CountDiv: https://app.codility.com/demo/results/trainingTN737Q-AUJ/
+
+
+
+

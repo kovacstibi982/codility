@@ -37,3 +37,17 @@ int FJsolution(int X, int Y, int D) {
 
 	return ++step;
 }
+
+int FJsolution2(int X, int Y, int D) {
+	// write your code in C++14 (g++ 6.2.0)
+
+	if (Y < X || Y == X)
+		return 0;
+
+	int distance = Y - X;
+
+	if (distance % D == 0)
+		return distance / D;
+	else
+		return (distance / D) + 1;
+}

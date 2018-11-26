@@ -12,9 +12,13 @@
 #include "GenomicRangeQuery.h"
 #include "CountDiv.h"
 
+void BinaryGap();
+void CyclicRotation();
+void OddOccurrencesInArray();
+
 int main() {
 
-	
+	OddOccurrencesInArray();
 	return 0;
 }
 
@@ -26,13 +30,14 @@ void MissingInteger() {
 
 void BinaryGap() {
 	int i = 15;
-	int r = BGsolution(i);
+	int j = 1376796946;
+	int r = BGsolution(j);
 	// todo: 561892, 74901729, 1376796946
 	std::cout << r << std::endl;
 }
 
 void CyclicRotation() {
-	std::vector<int> A = { };
+	std::vector<int> A = {};
 	int K = 3;
 	std::vector<int> rA = CRsolution(A, K);
 	// todo: empty vector

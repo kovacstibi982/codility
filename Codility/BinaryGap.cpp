@@ -41,8 +41,8 @@ int BGsolution(int N) {
 		else {
 			if (local > BG) {
 				BG = local;
-				local = 0;
 			}
+			local = 0;
 		}
 
 	}
