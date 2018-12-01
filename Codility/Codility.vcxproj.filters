@@ -54,6 +54,12 @@
     <ClCompile Include="CountDiv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PassingCars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MinAvgTwoSlice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MissingInteger.h">
@@ -90,6 +96,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CountDiv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassingCars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinAvgTwoSlice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

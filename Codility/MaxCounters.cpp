@@ -75,3 +75,60 @@ std::vector<int> MCsolution(int N, std::vector<int> &A) {
 
 	return rA;
 }
+
+//std::vector<int> MCsolution2(int N, std::vector<int> &A) {
+//	// write your code in C++14 (g++ 6.2.0)
+//	int max = 0;
+//	int arr[N] = { 0 };
+//
+//	for (auto it = A.begin(); it != A.end(); ++it) {
+//		if (*it >= 1 && *it <= N) {
+//			++arr[(*it) - 1];
+//			if (arr[(*it) - 1] > max) {
+//				max = arr[(*it) - 1];
+//			}
+//		}
+//		else if (*it == (N + 1)) {
+//			std::fill_n(arr, N, max);
+//		}
+//	}
+//
+//	return std::vector<int>(arr, arr + sizeof(arr) / sizeof(*arr));
+//}
+
+std::vector<int> MCsolution3(int N, std::vector<int> &A) {
+	// write your code in C++14 (g++ 6.2.0)
+
+	int max = 0;
+	bool cp = 1;
+	std::vector<int> rA(N);
+	std::vector<int> reduce;
+	for (int i : A) {
+		if (i <= N && i >= 1) {
+			reduce.push_back(i);
+			cp = 1;
+		}
+		else if (A[i] == (N + 1)) {
+			if (cp) {
+				reduce.push_back(i);
+			}
+			cp = 0;
+		}
+	}
+
+	for (int i : A) {
+		if ((i >= 1) && (i <= N)) {
+			++rA[i - 1];
+			//cout << rA[0] << rA[1] << rA[2] << rA[3] << rA[4]  << endl;
+			if (rA[i - 1] > max)
+				max = rA[i - 1];
+		}
+		else if (i == (N + 1)) {
+			for (int j = 0; j < rA.size(); ++j) {
+				rA[j] = max;
+			}
+		}
+	}
+
+	return rA;
+}

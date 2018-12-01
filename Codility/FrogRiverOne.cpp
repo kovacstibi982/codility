@@ -62,3 +62,23 @@ int FROsolution(int X, std::vector<int> &A) {
 
 	return -1;
 }
+
+int FROsolution02(int X, std::vector<int> &A) {
+	// write your code in C++14 (g++ 6.2.0)
+
+	int ready = 0;
+	std::vector<int> jump(X);
+
+	for (int i = 0; i < A.size(); ++i) {
+		if (!jump[A[i] - 1]) {
+			//cout << A[i]<<endl;
+			jump[A[i] - 1] = 1;
+			++ready;
+		}
+		//cout<<ready<<endl;
+		if (ready == X)
+			return i;
+	}
+
+	return -1;
+}

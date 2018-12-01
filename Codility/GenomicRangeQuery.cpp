@@ -59,8 +59,6 @@ int getValue(char c) {
 std::vector<int> GROsolution(std::string &S, std::vector<int> &P, std::vector<int> &Q) {
 	// write your code in C++14 (g++ 6.2.0)
 
-
-
 	std::vector<int> ret(P.size());
 	//cout << S << endl;
 	auto itQ = Q.begin();
@@ -82,3 +80,50 @@ std::vector<int> GROsolution(std::string &S, std::vector<int> &P, std::vector<in
 
 	return ret;
 }
+
+
+std::vector<int> GROsolution02(std::string &S, std::vector<int> &P, std::vector<int> &Q) {
+	// write your code in C++14 (g++ 6.2.0)
+		std::string nuc = "ACGT";
+
+		int size = P.size();
+		std::vector<int> min(size);
+		for (int i = 0; i < size; ++i) {
+			std::string sub = S.substr(P[i], (Q[i] - P[i]) + 1);
+			//cout << sub << endl;
+			for (int j = 0; j < 4; ++j) {
+				std::size_t found = sub.find(nuc[j]);
+				if (found != std::string::npos) {
+					min[i] = j + 1;
+					//cout << found << endl;
+					break;
+				}
+			}
+		}
+		return min;
+}
+
+std::vector<int> GROsolution03(std::string &S, std::vector<int> &P, std::vector<int> &Q) {
+	// write your code in C++14 (g++ 6.2.0)
+	std::string nuc = "ACGT";
+
+	int size = P.size();
+	std::vector<int> min(size);
+	for (int i = 0; i < size; ++i) {
+		std::string sub = S.substr(P[i], (Q[i] - P[i]) + 1);
+		std::set<char> reduce;
+		for (char c : sub)
+			reduce.insert(c);
+		//cout << sub << endl;
+		auto b = reduce.begin();
+		for (int j = 0; j < 4; ++j) {
+			if (nuc[j] == *b) {
+				min[i] = j + 1;
+				//cout << found << endl;
+				break;
+			}
+		}
+	}
+	return min;
+}
+

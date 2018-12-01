@@ -11,6 +11,8 @@
 #include "MaxCounters.h"
 #include "GenomicRangeQuery.h"
 #include "CountDiv.h"
+#include "PassingCars.h"
+#include "MinAvgTwoSlice.h"
 
 void BinaryGap();
 void CyclicRotation();
@@ -18,7 +20,9 @@ void OddOccurrencesInArray();
 
 int main() {
 
-	OddOccurrencesInArray();
+	std::vector<int> v = {4,2,2,5,1,5,8};
+	int ret = MATSsolution(v);
+	std::cout << ret << std::endl;
 	return 0;
 }
 
@@ -108,3 +112,15 @@ void CountDiv() {
 	int ret = CDsolution(A, B, K);
 	std::cout << ret << std::endl;
 }
+
+void PassingCars() {
+	std::vector<int> v1 = { 0,1,0,1,1 };
+	std::vector<int> v2 = { 1,0,1,0,0,1,1,0,1,0,1,1,0,1,1,0,0,0,1,1,0,1,0 };
+	int ret = PCarsolution(v2);
+	std::cout << ret << std::endl;
+}
+
+void MATSsolution() {
+
+}
+

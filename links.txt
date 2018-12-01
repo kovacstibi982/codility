@@ -5,10 +5,11 @@
 - PermMissingElem: https://app.codility.com/demo/results/trainingV56R2G-3UY/
 - FrogJmp: https://app.codility.com/demo/results/trainingA4EM6H-JEV/ || https://app.codility.com/demo/results/trainingWHZ3DY-MD4/
 - PermCheck: https://app.codility.com/demo/results/trainingW6XGQ2-9RP/
-- FrogRiverOne: https://app.codility.com/demo/results/training72SJY2-JU8/
-- MaxCounters: https://app.codility.com/demo/results/trainingVNDMK7-KM3/
-- CountDiv: https://app.codility.com/demo/results/trainingTN737Q-AUJ/
-
-
-
+- FrogRiverOne: https://app.codility.com/demo/results/training72SJY2-JU8/ ||https://app.codility.com/demo/results/trainingE5MR4S-GJT/
+- MaxCounters: https://app.codility.com/demo/results/trainingVNDMK7-KM3/ ||https://app.codility.com/demo/results/trainingSRZXRV-23Z/
+- CountDiv: https://app.codility.com/demo/results/trainingTN737Q-AUJ/ || https://app.codility.com/demo/results/trainingTXBSMF-EQB/
+- GenomicRangeQuery: https://app.codility.com/demo/results/training4CNKS6-DQ2/ ||https://app.codility.com/demo/results/training8NBQMU-2HJ/ ||https://app.codility.com/demo/results/trainingBYDBW2-2GY/
+- PassingCars: https://app.codility.com/demo/results/trainingGPH45P-JPP/ || https://app.codility.com/demo/results/trainingCXZVWM-C3W/ ||https://app.codility.com/demo/results/training4BR7UH-6TY/
+- MinAvgTwoSlice: https://app.codility.com/demo/results/trainingC7VTKD-4T5/ || 
+- Distinct: https://app.codility.com/demo/results/trainingTJCYJC-FHG/
 
