@@ -54,3 +54,26 @@ int MPOTsolution(std::vector<int> &A) {
 
 	return *(e - 1) * *(e - 2) * *(e - 3);
 }
+
+int MPOTsolution2(std::vector<int> &A) {
+	// write your code in C++14 (g++ 6.2.0)
+	if (A.size() < 3)
+		return 0;
+
+	auto b = A.begin();
+	auto e = A.end();
+
+	std::sort(b, e);
+
+	if (*(e - 1) < 0) {
+		return *(e - 1) * *(e - 2) * *(e - 3);
+	}
+
+	if (*b < 0 && *(b + 1) < 0) {
+		if (*b * *(b + 1) > *(e - 1) * *(e - 2))
+			return *b * *(b + 1) * *(e - 1);
+	}
+
+	return *(e - 1) * *(e - 2) * *(e - 3);
+
+}

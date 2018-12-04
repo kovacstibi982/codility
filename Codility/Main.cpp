@@ -19,6 +19,8 @@
 #include "NumberOfDiscIntersections.h"
 #include "Brackets.h"
 #include "Nesting.h"
+#include "StoneWall.h"
+#include "Fish.h"
 
 void BinaryGap();
 void CyclicRotation();
@@ -26,9 +28,7 @@ void OddOccurrencesInArray();
 
 int main() {
 
-	std::string S = "()(()(()(()(()(())))))";
-	int ret = Nsolution(S);
-	std::cout << ret << std::endl;
+	
 	return 0;
 }
 
@@ -164,6 +164,20 @@ void Brackets() {
 }
 
 void Nesting() {
-
+	std::string S = "()(()(()(()(()(())))))";
+	int ret = Nsolution(S);
+	std::cout << ret << std::endl;
 }
 	
+void StoneWall() {
+	std::vector<int> v = { 8,8,5,7,9,8,7,4,8 };
+	int ret = SWsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void Fish() {
+	std::vector<int> A = { 4,3,2,1,5 };
+	std::vector<int> B = { 0,1,0,0,0 };
+	int ret = Fsolution(A, B);
+	std::cout << ret << std::endl;
+}

@@ -120,6 +120,7 @@
     <ClCompile Include="CountDiv.cpp" />
     <ClCompile Include="CyclicRotation.cpp" />
     <ClCompile Include="Distinct.cpp" />
+    <ClCompile Include="Fish.cpp" />
     <ClCompile Include="FrogJmp.cpp" />
     <ClCompile Include="FrogRiverOne.cpp" />
     <ClCompile Include="GenomicRangeQuery.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="PassingCars.cpp" />
     <ClCompile Include="PermCheck.cpp" />
     <ClCompile Include="PermMissingElem.cpp" />
+    <ClCompile Include="StoneWall.cpp" />
     <ClCompile Include="TapeEquilibrium.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
@@ -143,6 +145,7 @@
     <ClInclude Include="CountDiv.h" />
     <ClInclude Include="CyclicRotation.h" />
     <ClInclude Include="Distinct.h" />
+    <ClInclude Include="Fish.h" />
     <ClInclude Include="FrogJmp.h" />
     <ClInclude Include="FrogRiverOne.h" />
     <ClInclude Include="GenomicRangeQuery.h" />
@@ -156,6 +159,7 @@
     <ClInclude Include="PassingCars.h" />
     <ClInclude Include="PermCheck.h" />
     <ClInclude Include="PermMissingElem.h" />
+    <ClInclude Include="StoneWall.h" />
     <ClInclude Include="TapeEquilibrium.h" />
     <ClInclude Include="Triangle.h" />
   </ItemGroup>
