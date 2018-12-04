@@ -12,4 +12,8 @@
 - PassingCars: https://app.codility.com/demo/results/trainingGPH45P-JPP/ || https://app.codility.com/demo/results/trainingCXZVWM-C3W/ ||https://app.codility.com/demo/results/training4BR7UH-6TY/
 - MinAvgTwoSlice: https://app.codility.com/demo/results/trainingC7VTKD-4T5/ || 
 - Distinct: https://app.codility.com/demo/results/trainingTJCYJC-FHG/
-
+- Triangle: https://app.codility.com/demo/results/trainingF2T4V7-SBS/
+- MaxProductOfThree: https://app.codility.com/demo/results/trainingW9URHJ-NA9/ || 
+- NumberOfDiscIntersections: https://app.codility.com/demo/results/training9NPJG5-Q5H/
+- Brackets: 
+- Nesting: https://app.codility.com/demo/results/training9U2YTS-MMU/

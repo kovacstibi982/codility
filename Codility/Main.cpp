@@ -13,6 +13,12 @@
 #include "CountDiv.h"
 #include "PassingCars.h"
 #include "MinAvgTwoSlice.h"
+#include "Distinct.h"
+#include "Triangle.h"
+#include "MaxProductOfThree.h"
+#include "NumberOfDiscIntersections.h"
+#include "Brackets.h"
+#include "Nesting.h"
 
 void BinaryGap();
 void CyclicRotation();
@@ -20,8 +26,8 @@ void OddOccurrencesInArray();
 
 int main() {
 
-	std::vector<int> v = {4,2,2,5,1,5,8};
-	int ret = MATSsolution(v);
+	std::string S = "()(()(()(()(()(())))))";
+	int ret = Nsolution(S);
 	std::cout << ret << std::endl;
 	return 0;
 }
@@ -120,7 +126,44 @@ void PassingCars() {
 	std::cout << ret << std::endl;
 }
 
-void MATSsolution() {
-
+void MinAvgTwoSlice() {
+	std::vector<int> v = { 4,2,2,5,1,5,8 };
+	int ret = MATSsolution(v);
+	std::cout << ret << std::endl;
 }
 
+void Distinct() {
+	std::vector<int> v = { 1,2,3,2,1 };
+	int ret = Dsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void Triangle() {
+	std::vector<int> v = { 1,2,4,5,8,10,20 };
+	int ret = Tsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void MaxProductOfThree() {
+	//todo: For example, for the input [-5, 5, -5, 4] the solution returned a wrong answer (got -100 expected 125).
+	std::vector<int> v = { -3,1,2,-2,5,6 };
+	int ret = MPOTsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void NumberOfDiscIntersections() {
+	std::vector<int> v = { 1,5,2,1,4,0 };
+	int ret = NODIsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void Brackets() {
+	std::string S = "[]{}({}[]({}[]({}[]())))";
+	int ret = Bsolution(S);
+	std::cout << ret << std::endl;
+}
+
+void Nesting() {
+
+}
+	
