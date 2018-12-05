@@ -105,6 +105,18 @@
     <ClCompile Include="Flags.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CountNonDivisible.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CountSemiprimes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChocolatesByNumbers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonPrimeDivisors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MissingInteger.h">
@@ -192,6 +204,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Flags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CountNonDivisible.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CountSemiprimes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChocolatesByNumbers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonPrimeDivisors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

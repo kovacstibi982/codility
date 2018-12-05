@@ -117,8 +117,12 @@
   <ItemGroup>
     <ClCompile Include="BinaryGap.cpp" />
     <ClCompile Include="Brackets.cpp" />
+    <ClCompile Include="ChocolatesByNumbers.cpp" />
+    <ClCompile Include="CommonPrimeDivisors.cpp" />
     <ClCompile Include="CountDiv.cpp" />
     <ClCompile Include="CountFactors.cpp" />
+    <ClCompile Include="CountNonDivisible.cpp" />
+    <ClCompile Include="CountSemiprimes.cpp" />
     <ClCompile Include="CyclicRotation.cpp" />
     <ClCompile Include="Distinct.cpp" />
     <ClCompile Include="Dominator.cpp" />
@@ -149,8 +153,12 @@
   <ItemGroup>
     <ClInclude Include="BinaryGap.h" />
     <ClInclude Include="Brackets.h" />
+    <ClInclude Include="ChocolatesByNumbers.h" />
+    <ClInclude Include="CommonPrimeDivisors.h" />
     <ClInclude Include="CountDiv.h" />
     <ClInclude Include="CountFactors.h" />
+    <ClInclude Include="CountNonDivisible.h" />
+    <ClInclude Include="CountSemiprimes.h" />
     <ClInclude Include="CyclicRotation.h" />
     <ClInclude Include="Distinct.h" />
     <ClInclude Include="Dominator.h" />

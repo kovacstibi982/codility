@@ -26,5 +26,9 @@
 - MinPerimeterRectangle: https://app.codility.com/demo/results/trainingMX8GQE-CBV/ || 
 - Peaks: https://app.codility.com/demo/results/trainingYH3AS7-EKV/ || 
 - Flags: https://app.codility.com/demo/results/trainingXU4DWB-34K/ || 
+- CountNonDivisible: https://app.codility.com/demo/results/trainingE5AT4G-HMF/ || 
+- CountSemiprimes: https://app.codility.com/demo/results/training2BBS77-J5B/
+- ChocolatesByNumbers: https://app.codility.com/demo/results/training3CGJ9T-FSH/ ||
+- CommonPrimeDivisors: https://app.codility.com/demo/results/trainingSS9NNE-MYK/ || 
 - 
 - 

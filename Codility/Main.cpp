@@ -28,6 +28,10 @@
 #include "MinPerimeterRectangle.h"
 #include "Peaks.h"
 #include "Flags.h"
+#include "CountNonDivisible.h"
+#include "CountSemiprimes.h"
+#include "ChocolatesByNumbers.h"
+#include "CommonPrimeDivisors.h"
 
 void BinaryGap();
 void CyclicRotation();
@@ -228,5 +232,35 @@ void Peaks() {
 void Flags() {
 	std::vector<int> v = { 1,5,3,4,3,4,1,2,3,4,6,2 };
 	int ret = Flagsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void CountNonDivisible() {
+	std::vector<int> v = { 3,1,2,3,6 };
+	std::vector<int> ret = CNDsolution(v);
+	for (int r : ret)
+		std::cout << r << " ";
+}
+
+void CountSemiprimes() {
+	int N = 26;
+	std::vector<int> P = { 1,4,16 };
+	std::vector<int> Q = { 26,10,20 };
+	std::vector<int> ret = CSsolution(N, P, Q);
+	for (int sp : ret)
+		std::cout << sp << std::endl;
+}
+
+void ChocolatesByNumbers() {
+	int N = 10;
+	int M = 4;
+	int ret = CBNsolution(N, M);
+	std::cout << ret << std::endl;
+}
+
+void CommonPrimeDivisors() {
+	std::vector<int> A = { 15,10,3 };
+	std::vector<int> B = { 75,30,5 };
+	int ret = CPDsolution(A, B);
 	std::cout << ret << std::endl;
 }
