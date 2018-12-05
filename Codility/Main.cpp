@@ -21,6 +21,13 @@
 #include "Nesting.h"
 #include "StoneWall.h"
 #include "Fish.h"
+#include "EquiLeader.h"
+#include "Dominator.h"
+#include "MaxSliceSum.h"
+#include "CountFactors.h"
+#include "MinPerimeterRectangle.h"
+#include "Peaks.h"
+#include "Flags.h"
 
 void BinaryGap();
 void CyclicRotation();
@@ -179,5 +186,47 @@ void Fish() {
 	std::vector<int> A = { 4,3,2,1,5 };
 	std::vector<int> B = { 0,1,0,0,0 };
 	int ret = Fsolution(A, B);
+	std::cout << ret << std::endl;
+}
+
+void EquiLeader() {
+	std::vector<int> v = { 4,3,4,4,4,2 };
+	int ret = ELsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void Dominator() {
+	std::vector<int> v = { 3,4,3,2,3,-1,3,3 };
+	int ret = DomSolution(v);
+	std::cout << ret << std::endl;
+}
+
+void MaxSliceSum() {
+	std::vector<int> v = { 3,2,-6,4,0 };
+	int ret = MSSsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void CountFactors() {
+	int i = 24;
+	int ret = CFsolution(i);
+	std::cout << ret << std::endl;
+}
+
+void MinPerimeterRectangle() {
+	int i = 30;
+	int ret = MPRsolution(i);
+	std::cout << ret << std::endl;
+}
+
+void Peaks() {
+	std::vector<int> v = { 1,2,3,4,3,4,1,2,3,4,6,2 };
+	int ret = Psolution(v);
+	std::cout << ret << std::endl;
+}
+
+void Flags() {
+	std::vector<int> v = { 1,5,3,4,3,4,1,2,3,4,6,2 };
+	int ret = Flagsolution(v);
 	std::cout << ret << std::endl;
 }

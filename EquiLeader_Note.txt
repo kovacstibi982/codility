@@ -1,0 +1,64 @@
+// you can use includes, for example:
+#include <algorithm>
+#include <vector>
+// you can write to stdout for debugging purposes, e.g.
+// cout << "this is a debug message" << endl;
+
+int solution(vector<int> &A) {
+    // write your code in C++14 (g++ 6.2.0)
+    
+    int count = 0;
+    //int size = A.size();
+    
+    if(A.size() < 2 || A.size() == 3)
+        return 0;
+        
+    if(A.size() == 2 ){
+        if(A[0] == A[1])
+            return 1;
+    }
+    
+    for(auto it = A.begin(); it != A.end()-1; ++it){
+        std::vector<int> front(A.begin(), it+1);
+        auto bF = front.begin();
+        auto eF = front.end();
+        std::sort(bF, eF);
+        int count = 0;
+        int cSize = front.size();
+        int candidate = 0;
+        for(int i=0; i<cSize; ++i){
+            candidate = front[i];
+            for(int j=i; i< cSize; ++j){
+                if(candidate == front[j])
+                    ++count;
+            }
+            if(candidate>cSize)
+            {
+                break;
+            }else{
+                candidate = 0;
+            }
+        }
+        cout << candidate << endl;
+        //for(int i:front)
+        //    cout << i << endl;
+        //cout << "front" << endl;
+        //for(int i:tail)
+        //    cout << i << endl;
+        //cout << "tail" << endl;
+        
+        std::vector<int> tail(it+1, A.end());
+        auto bT = tail.begin();
+        auto eT = tail.end();
+        
+        std::sort(bT, eT);
+        
+        
+        if(tail.size() > 2)
+            ++it;
+        else
+            break;
+    }
+    
+    return count;
+}

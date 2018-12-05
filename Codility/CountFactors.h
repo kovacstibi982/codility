@@ -1,0 +1,2 @@
+
+int CFsolution(int N);
