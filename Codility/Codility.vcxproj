@@ -115,18 +115,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AbsDistinct.cpp" />
     <ClCompile Include="BinaryGap.cpp" />
     <ClCompile Include="Brackets.cpp" />
     <ClCompile Include="ChocolatesByNumbers.cpp" />
     <ClCompile Include="CommonPrimeDivisors.cpp" />
+    <ClCompile Include="CountDistinctSlices.cpp" />
     <ClCompile Include="CountDiv.cpp" />
     <ClCompile Include="CountFactors.cpp" />
     <ClCompile Include="CountNonDivisible.cpp" />
     <ClCompile Include="CountSemiprimes.cpp" />
+    <ClCompile Include="CountTriangles.cpp" />
     <ClCompile Include="CyclicRotation.cpp" />
     <ClCompile Include="Distinct.cpp" />
     <ClCompile Include="Dominator.cpp" />
     <ClCompile Include="EquiLeader.cpp" />
+    <ClCompile Include="FibFrog.cpp" />
     <ClCompile Include="Fish.cpp" />
     <ClCompile Include="Flags.cpp" />
     <ClCompile Include="FrogJmp.cpp" />
@@ -136,9 +140,12 @@
     <ClCompile Include="MaxCounters.cpp" />
     <ClCompile Include="MaxProductOfThree.cpp" />
     <ClCompile Include="MaxSliceSum.cpp" />
+    <ClCompile Include="MinAbsSumOfTwo.cpp" />
     <ClCompile Include="MinAvgTwoSlice.cpp" />
+    <ClCompile Include="MinMaxDivision.cpp" />
     <ClCompile Include="MinPerimeterRectangle.cpp" />
     <ClCompile Include="MissingInteger.cpp" />
+    <ClCompile Include="NailingPlanks.cpp" />
     <ClCompile Include="Nesting.cpp" />
     <ClCompile Include="NumberOfDiscIntersections.cpp" />
     <ClCompile Include="OddOccurrencesInArray.cpp" />
@@ -151,18 +158,22 @@
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbsDistinct.h" />
     <ClInclude Include="BinaryGap.h" />
     <ClInclude Include="Brackets.h" />
     <ClInclude Include="ChocolatesByNumbers.h" />
     <ClInclude Include="CommonPrimeDivisors.h" />
+    <ClInclude Include="CountDistinctSlices.h" />
     <ClInclude Include="CountDiv.h" />
     <ClInclude Include="CountFactors.h" />
     <ClInclude Include="CountNonDivisible.h" />
     <ClInclude Include="CountSemiprimes.h" />
+    <ClInclude Include="CountTriangles.h" />
     <ClInclude Include="CyclicRotation.h" />
     <ClInclude Include="Distinct.h" />
     <ClInclude Include="Dominator.h" />
     <ClInclude Include="EquiLeader.h" />
+    <ClInclude Include="FibFrog.h" />
     <ClInclude Include="Fish.h" />
     <ClInclude Include="Flags.h" />
     <ClInclude Include="FrogJmp.h" />
@@ -171,9 +182,12 @@
     <ClInclude Include="MaxCounters.h" />
     <ClInclude Include="MaxProductOfThree.h" />
     <ClInclude Include="MaxSliceSum.h" />
+    <ClInclude Include="MinAbsSumOfTwo.h" />
     <ClInclude Include="MinAvgTwoSlice.h" />
+    <ClInclude Include="MinMaxDivision.h" />
     <ClInclude Include="MinPerimeterRectangle.h" />
     <ClInclude Include="MissingInteger.h" />
+    <ClInclude Include="NailingPlanks.h" />
     <ClInclude Include="Nesting.h" />
     <ClInclude Include="NumberOfDiscIntersections.h" />
     <ClInclude Include="OddOccurrencesInArray.h" />

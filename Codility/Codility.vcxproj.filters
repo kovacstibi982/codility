@@ -117,6 +117,27 @@
     <ClCompile Include="CommonPrimeDivisors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FibFrog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MinMaxDivision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NailingPlanks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AbsDistinct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CountDistinctSlices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CountTriangles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MinAbsSumOfTwo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MissingInteger.h">
@@ -216,6 +237,27 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CommonPrimeDivisors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FibFrog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinMaxDivision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NailingPlanks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AbsDistinct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CountDistinctSlices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CountTriangles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinAbsSumOfTwo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

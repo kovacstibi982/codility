@@ -30,5 +30,10 @@
 - CountSemiprimes: https://app.codility.com/demo/results/training2BBS77-J5B/
 - ChocolatesByNumbers: https://app.codility.com/demo/results/training3CGJ9T-FSH/ ||
 - CommonPrimeDivisors: https://app.codility.com/demo/results/trainingSS9NNE-MYK/ || 
-- 
+- FibFrog: https://app.codility.com/demo/results/trainingB6UFM8-755/ ||
+- MinMaxDivision: https://app.codility.com/demo/results/trainingKVK28T-NFG/ || 
+- NailingPlanks: https://app.codility.com/demo/results/trainingQJPP8J-GSW/ || 
+- AbsDistinct: https://app.codility.com/demo/results/trainingJF6SKW-KZ7/
+- CountDistinctSlices: https://app.codility.com/demo/results/trainingRCUZHA-5WJ/
+- CountTriangles: https://app.codility.com/demo/results/training6USETZ-3PF/ ||
 - 

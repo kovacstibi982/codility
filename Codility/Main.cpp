@@ -32,6 +32,13 @@
 #include "CountSemiprimes.h"
 #include "ChocolatesByNumbers.h"
 #include "CommonPrimeDivisors.h"
+#include "FibFrog.h"
+#include "MinMaxDivision.h"
+#include "NailingPlanks.h"
+#include "AbsDistinct.h"
+#include "CountDistinctSlices.h"
+#include "CountTriangles.h"
+#include "MinAbsSumOfTwo.h"
 
 void BinaryGap();
 void CyclicRotation();
@@ -262,5 +269,53 @@ void CommonPrimeDivisors() {
 	std::vector<int> A = { 15,10,3 };
 	std::vector<int> B = { 75,30,5 };
 	int ret = CPDsolution(A, B);
+	std::cout << ret << std::endl;
+}
+
+void FibFrog() {
+	std::vector<int> v = { 0,0,0,1,1,0,1,0,0,0,0 };
+	int ret = FFsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void MinMaxDivision() {
+	int K = 3;
+	int M = 5;
+	std::vector<int> v = { 2,1,5,1,2,2,2 };
+	int ret = MMDsolution(K, M, v);
+	std::cout << ret << std::endl;
+}
+
+void NailingPlanks() {
+	std::vector<int> A = { 1,4,5,8 };
+	std::vector<int> B = { 4,5,9,10 };
+	std::vector<int> C = { 4,6,7,10,2 };
+	int ret = NPsolution(A, B, C);
+	std::cout << ret << std::endl;
+}
+
+void AbsDistinct() {
+	std::vector<int> v = { -5,-3,-1,0,3,6 };
+	int ret = ADsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void CountDistinctSlices() {
+	int M = 6;
+	std::vector<int> v = { 3,4,5,5,2 };
+	int ret = CDSsolution(M, v);
+	std::cout << ret << std::endl;
+}
+
+void CountTriangles() {
+	std::vector<int> v = { 10,2,5,1,8,12 };
+	int ret = CTsolution(v);
+	std::cout << ret << std::endl;
+}
+
+void MinAbsSumOfTwo() {
+	std::vector<int> v1 = { 1,4,-3 };
+	std::vector<int> v2 = { -8,4,5,-10,3 };
+	int ret = MASOTsolution(v1);
 	std::cout << ret << std::endl;
 }
