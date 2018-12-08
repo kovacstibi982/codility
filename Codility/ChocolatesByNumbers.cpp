@@ -29,6 +29,16 @@ N and M are integers within the range [1..1,000,000,000].
 Copyright 2009–2018 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 */
 
+/*
+Compilation successful.
+
+Example test:    (10, 4)
+OK
+
+Your test case:  [12, 21]
+Returned value: 4
+*/
+
 
 int CBNsolution(int N, int M) {
 	// write your code in C++14 (g++ 6.2.0)
@@ -42,6 +52,35 @@ int CBNsolution(int N, int M) {
 			index = (index + N) % M;
 		else
 			index += M;
+		//cout << bin[index] << endl;
+	}
+
+	return count;
+}
+
+int CBNsolution2(int N, int M) {
+	std::vector<int> bin(N, 1);
+	int index = 0;
+	int count = 0;
+
+
+	while (bin[index] == 1) {
+		bin[index] = 0;
+		++count;
+
+		if (N > M) {
+			//cout << "index: " << index << endl;
+			if (index + M > N - 1) {
+				index = (index + N) % M;
+				//cout << index << endl;
+			}
+			else
+				index += M;
+		}
+		else {
+			index = (M + index) % N;
+		}
+
 		//cout << bin[index] << endl;
 	}
 

@@ -68,6 +68,12 @@ Your test case:  [3, 5, [2, 2, 2, 2, 2, 2]]
 Returned value: 4
 */
 
+/*
+(3,5,[5,3])
+(1, 10, [5, 3])
+(4, 10, [3, 4, 5, 6, 7, 8])
+*/
+
 int MMDsolution(int K, int M, std::vector<int> &A) {
 	// write your code in C++14 (g++ 6.2.0)
 	int size = A.size();
@@ -125,3 +131,10 @@ int MMDsolution(int K, int M, std::vector<int> &A) {
 
 	return minMax;
 }
+
+int MMDsolution2(int K, int M, std::vector<int> &A) {
+	return 0;
+}
+
+
+

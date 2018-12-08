@@ -41,6 +41,22 @@ each element of array A is an integer within the range [−1,000..1,000].
 Copyright 2009–2018 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 */
 
+/*
+Compilation successful.
+
+Example test:    [-3, 1, 2, -2, 5, 6]
+OK
+
+Your test case:  [4, 7, 3, 2, 1, -3, -5]
+Returned value: 105
+
+Your test case:  [4, 7, 2, 3, 1, -6]
+Returned value: 84
+
+Your test case:  [4, 7, -5, 3, 1, -6]
+Returned value: 210
+*/
+
 int MPOTsolution(std::vector<int> &A) {
 	// write your code in C++14 (g++ 6.2.0)
 
@@ -76,4 +92,26 @@ int MPOTsolution2(std::vector<int> &A) {
 
 	return *(e - 1) * *(e - 2) * *(e - 3);
 
+}
+
+int MPOTsolution3(std::vector<int> &A) {
+	// write your code in C++14 (g++ 6.2.0)
+	if (A.size() < 3)
+		return 0;
+
+	auto b = A.begin();
+	auto e = A.end();
+
+	std::sort(b, e);
+	//cout << "b+1: " << *(b + 1) << endl;
+
+	if (*(b + 1) < 0) {
+		//cout << "1" << endl;
+		if (*b * *(b + 1) * *(e - 1) > *(e - 1) * *(e - 2) * *(e - 3))
+			return *b * *(b + 1) * *(e - 1);
+		else
+			return *(e - 1) * *(e - 2) * *(e - 3);
+	}
+
+	return *(e - 1) * *(e - 2) * *(e - 3);
 }

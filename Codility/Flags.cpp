@@ -63,6 +63,12 @@ each element of array A is an integer within the range [0..1,000,000,000].
 Copyright 2009–2018 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 */
 
+/*
+	[0,3,2]
+
+	[0, 0, 0, 0, 0, 1, 0, 1, 0, 1]
+*/
+
 int Flagsolution(std::vector<int> &A) {
 	// write your code in C++14 (g++ 6.2.0)
 	std::vector<int> peaks;
@@ -87,6 +93,42 @@ int Flagsolution(std::vector<int> &A) {
 		}
 		if (check >= i)
 			flags = i;
+	}
+
+	return flags;
+}
+
+int Flagsolution2(std::vector<int> &A) {
+	std::vector<int> peaks;
+
+	for (unsigned i = 1; i < A.size() - 1; ++i) {
+		if (A[i - 1] < A[i] && A[i + 1] < A[i]) {
+			peaks.push_back(i);
+			++i;
+		}
+	}
+
+	//for(int p:peaks)
+	//    cout << p << endl;
+	//)
+
+	int flags = 0;
+	int size = peaks.size();
+
+	if (size == 1)
+		if (A[0] < A[1] && A[2] < A[1])
+			return 1;
+
+	for (int flag = 2; flag <= size; ++flag) {
+		//cout << "in" << endl;
+		int check = 0;
+		for (int p = 1; p < size; ++p) {
+			//cout << abs(peaks[p-1]+peaks[p]) << endl;
+			if (abs(peaks[p - 1] + peaks[p]) > flag)
+				++check;
+		}
+		if (check >= flag)
+			flags = flag;
 	}
 
 	return flags;

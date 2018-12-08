@@ -71,6 +71,22 @@ each element of array A is an integer within the range [0..1,000,000,000].
 Copyright 2009–2018 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 */
 
+/*
+Compilation successful.
+
+Example test:    [1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
+OK
+
+Your test case:  [0, 1, 0, 0, 1, 0, 0, 1, 0]
+Returned value: 3
+
+Your test case:  [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+Returned value: 1
+
+Your test case:  [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+Returned value: 4
+*/
+
 int Psolution(std::vector<int> &A) {
 	// write your code in C++14 (g++ 6.2.0)
 

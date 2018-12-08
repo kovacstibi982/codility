@@ -48,3 +48,30 @@ int MPRsolution(int N) {
 
 	return min;
 }
+
+int MPRsolution2(int N) {
+	// write your code in C++14 (g++ 6.2.0)
+	std::vector<int> divisor;
+
+	if (N < 0)
+		return 0;
+
+	for (int i = 1; i <= N; ++i) {
+		if (N%i == 0) {
+			divisor.push_back(i);
+		}
+	}
+	int min = 2 * N + 3;
+	int size = ceil(divisor.size() / 2.0);
+	//cout << size << endl;
+	for (int i = 0; i < size; ++i) {
+		//cout << divisor.back() << endl;
+		//cout << divisor[i] + divisor.back() << endl;
+		if ((divisor[i] + divisor.back()) * 2 < min)
+			min = (divisor[i] + divisor.back()) * 2;
+		divisor.pop_back();
+	}
+
+
+	return min;
+}

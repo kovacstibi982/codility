@@ -41,6 +41,12 @@ the elements of A are all distinct.
 Copyright 2009–2018 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 */
 
+/*
+([4,3,2,1,5],[0,1,0,0,1])
+
+([13,4,16,9,17,2,8,1,6,18,19,20,14,10,5,3,12,7,15,11],[1,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1])
+*/
+
 int Fsolution(std::vector<int> &A, std::vector<int> &B) {
 	// write your code in C++14 (g++ 6.2.0)
 	int count = 0;
@@ -88,3 +94,53 @@ int Fsolution(std::vector<int> &A, std::vector<int> &B) {
 
 	return count;
 }
+
+int Fsolution2(std::vector<int> &A, std::vector<int> &B) {
+	// write your code in C++14 (g++ 6.2.0)
+	int count = 0;
+	std::stack<int> s;
+	int direction = B[0];
+	int size = A.size();
+	for (int i = 0; i < size; ++i) {
+		//cout << "i size: " << s.size() << endl;
+		if (s.empty()) {
+			//cout << "empty" << endl;
+			s.push(A[i]);
+			direction = B[i];
+			continue;
+		}
+		//cout << "direction: " << direction << " B[i]: " << B[i] << endl;
+		if (direction == 0 && B[i] == 1) {
+			//cout << B[i] << " " << A[i] << endl;
+			count += s.size();
+			//cout << "clear, s: " << s.size() << endl;
+			while (!s.empty()) {
+				s.pop();
+			}
+			s.push(A[i]);
+			direction = B[i];
+			continue;
+		}
+
+		if (direction == B[i]) {
+			//cout << "same" << endl;
+			s.push(A[i]);
+		}
+		else if (A[i] > s.top()) {
+			//cout << "bigget" << endl;
+			while (!s.empty()) {
+				s.pop();
+			}
+			s.push(A[i]);
+			direction = B[i];
+		}
+		else if (A[i] < s.top()) {
+			//cout << "smaller" << endl;
+		}
+	}
+	count += s.size();
+	//cout << "count: " << count << endl;
+	//cout << "size: " << s.size() << endl;
+	return count;
+}
+

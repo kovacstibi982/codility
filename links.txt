@@ -13,27 +13,32 @@
 - MinAvgTwoSlice: https://app.codility.com/demo/results/trainingC7VTKD-4T5/ || 
 - Distinct: https://app.codility.com/demo/results/trainingTJCYJC-FHG/
 - Triangle: https://app.codility.com/demo/results/trainingF2T4V7-SBS/
-- MaxProductOfThree: https://app.codility.com/demo/results/trainingW9URHJ-NA9/ || https://app.codility.com/demo/results/trainingJPX5CE-GCG/
+- MaxProductOfThree: https://app.codility.com/demo/results/trainingW9URHJ-NA9/ || https://app.codility.com/demo/results/trainingJPX5CE-GCG/ || https://app.codility.com/demo/results/trainingTBQMGC-F7X/
 - NumberOfDiscIntersections: https://app.codility.com/demo/results/training9NPJG5-Q5H/
-- Brackets: 
+- Brackets: https://app.codility.com/demo/results/trainingMVCW2F-EV2/
 - Nesting: https://app.codility.com/demo/results/training9U2YTS-MMU/
-- StoneWall: https://app.codility.com/demo/results/trainingAPDK9D-9Z5/ 
-- Fish: https://app.codility.com/demo/results/trainingRPVTPS-EQG/
+- StoneWall: https://app.codility.com/demo/results/trainingAPDK9D-9Z5/ || https://app.codility.com/demo/results/trainingW6QJJU-GF7/
+- Fish: https://app.codility.com/demo/results/trainingRPVTPS-EQG/ || https://app.codility.com/demo/results/trainingBN4JWN-HPF/ ||
 - EquiLeader: https://app.codility.com/demo/results/trainingAYNGRY-R4S/
 - Dominator: https://app.codility.com/demo/results/trainingHXYCC2-W2K/
-- MaxSliceSum: https://app.codility.com/demo/results/trainingYQPV99-YQE/ || 
+- MaxSliceSum: https://app.codility.com/demo/results/trainingYQPV99-YQE/ || https://app.codility.com/demo/results/trainingKDDC58-V69/
 - CountFactors: https://app.codility.com/demo/results/trainingENJY4F-3GX/
-- MinPerimeterRectangle: https://app.codility.com/demo/results/trainingMX8GQE-CBV/ || 
+- MinPerimeterRectangle: https://app.codility.com/demo/results/trainingMX8GQE-CBV/ || https://app.codility.com/demo/results/trainingHM8GEH-MTM/
 - Peaks: https://app.codility.com/demo/results/trainingYH3AS7-EKV/ || 
-- Flags: https://app.codility.com/demo/results/trainingXU4DWB-34K/ || 
+- Flags: https://app.codility.com/demo/results/trainingXU4DWB-34K/ || https://app.codility.com/demo/results/trainingQJGEEC-8HU/
 - CountNonDivisible: https://app.codility.com/demo/results/trainingE5AT4G-HMF/ || 
 - CountSemiprimes: https://app.codility.com/demo/results/training2BBS77-J5B/
-- ChocolatesByNumbers: https://app.codility.com/demo/results/training3CGJ9T-FSH/ ||
+- ChocolatesByNumbers: https://app.codility.com/demo/results/training3CGJ9T-FSH/ || https://app.codility.com/demo/results/trainingBWHFED-46T/
 - CommonPrimeDivisors: https://app.codility.com/demo/results/trainingSS9NNE-MYK/ || 
 - FibFrog: https://app.codility.com/demo/results/trainingB6UFM8-755/ ||
-- MinMaxDivision: https://app.codility.com/demo/results/trainingKVK28T-NFG/ || 
+- MinMaxDivision: https://app.codility.com/demo/results/trainingKVK28T-NFG/ || https://app.codility.com/demo/results/trainingTKMDNM-AEA/ || https://app.codility.com/demo/results/trainingPZUR6P-CN3/
 - NailingPlanks: https://app.codility.com/demo/results/trainingQJPP8J-GSW/ || 
 - AbsDistinct: https://app.codility.com/demo/results/trainingJF6SKW-KZ7/
 - CountDistinctSlices: https://app.codility.com/demo/results/trainingRCUZHA-5WJ/
 - CountTriangles: https://app.codility.com/demo/results/training6USETZ-3PF/ ||
-- 
+- Ladder: https://app.codility.com/demo/results/trainingMYGH8R-CV8/ || 
+- MaxProfit: https://app.codility.com/demo/results/trainingFABSWC-QEM/ || (check: kisebb bought után jön-e nagyobb sold) || 
+- MaxDoubleSliceSum: 
+- MaxNonoverlappingSegments: 
+- TieRopes: 
+

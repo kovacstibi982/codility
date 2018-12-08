@@ -60,3 +60,34 @@ int MSSsolution(std::vector<int> &A) {
 
 	return allSum;
 }
+
+int MSSsolution2(std::vector<int> &A) {
+	// write your code in C++14 (g++ 6.2.0)
+	int allSum = A[0];
+	//int s1 = 0, s2 = 0;
+	int size = A.size();
+	//cout << "size: " << size << endl;
+	int sum = 0;
+	for (int begin = 0; begin < size; ++begin) {
+		//cout << "b" << endl;
+		for (int end = begin; end != size; ++end) {
+			//cout << "begin: " << A[begin] << " end: " << A[end] << endl;
+			int b = begin;
+			while (b <= end) {
+				sum += A[b];
+				++b;
+			}
+			//cout << "sum: " << sum << endl;
+			if (sum > allSum)
+				allSum = sum;
+			sum = 0;
+		}
+
+	}
+
+	//cout << "s1: " << s1 << " s2: " << s2 << endl;
+	//cout << "Allsum: " << allSum << endl;
+
+	return allSum;
+}
+

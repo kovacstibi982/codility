@@ -39,6 +39,8 @@
 #include "CountDistinctSlices.h"
 #include "CountTriangles.h"
 #include "MinAbsSumOfTwo.h"
+#include "Ladder.h"
+#include "MaxProfit.h"
 
 void BinaryGap();
 void CyclicRotation();
@@ -317,5 +319,19 @@ void MinAbsSumOfTwo() {
 	std::vector<int> v1 = { 1,4,-3 };
 	std::vector<int> v2 = { -8,4,5,-10,3 };
 	int ret = MASOTsolution(v1);
+	std::cout << ret << std::endl;
+}
+
+void Ladder() {
+	std::vector<int> A = { 4,4,5,5,1 };
+	std::vector<int> B = { 3,2,4,3,1 };
+	std::vector<int> ret = Lsolution(A, B);
+	for (int r : ret)
+		std::cout << r << std::endl;
+}
+
+void MaxProfit() {
+	std::vector<int> v = { 23171, 21011, 21123, 21366, 21013, 21367 };
+	int ret = MPsolution(v);
 	std::cout << ret << std::endl;
 }
