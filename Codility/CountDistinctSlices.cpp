@@ -52,6 +52,12 @@ Returned value: 11
 
 Your test case:  [6, [3, 4, 5, 5, 2, 1, 3]]
 Returned value: 16
+
+Your test case:  [6, [6, 5, 6, 5, 6, 5, 6]]
+Returned value: 6
+
+Your test case:  [6, [1, 2, 3, 1, 2, 3]]
+Returned value: 10
 */
 
 int CDSsolution(int M, std::vector<int> &A) {

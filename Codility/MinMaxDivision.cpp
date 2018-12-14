@@ -132,8 +132,55 @@ int MMDsolution(int K, int M, std::vector<int> &A) {
 	return minMax;
 }
 
+int blocksNo(std::vector<int> A, int maxMid) {
+	int blocksNumber = 1;
+	int preBlockSum = A[0];
+	for (unsigned i = 1; i < A.size(); ++i) {
+		if (preBlockSum + A[i] > maxMid) {
+			preBlockSum = A[i];
+			blocksNumber += 1;
+		}
+		else {
+			preBlockSum += A[i];
+		}
+	}
+
+	return blocksNumber;
+}
+
 int MMDsolution2(int K, int M, std::vector<int> &A) {
-	return 0;
+	int sum = 0;
+	int max = 0;
+	//int max = std::max_element(A.begin(), A.end());
+	for (int a : A) {
+		sum += a;
+		if (a > max)
+			max = a;
+	}
+
+	//cout << sum << " " << max << endl;
+
+	int result = 0;
+	int size = A.size();
+	if (K == 1)
+		return sum;
+	if (K >= size)
+		return max;
+
+	while (max <= sum) {
+		int resultMaxMid = (max + sum) / 2;
+		int blocksNeeded = blocksNo(A, resultMaxMid);
+		if (blocksNeeded <= K) {
+			sum = resultMaxMid - 1;
+			result = resultMaxMid;
+		}
+		else {
+			max = resultMaxMid + 1;
+		}
+	}
+
+
+	return result;
 }
 
 

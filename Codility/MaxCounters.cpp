@@ -132,3 +132,26 @@ std::vector<int> MCsolution3(int N, std::vector<int> &A) {
 
 	return rA;
 }
+
+
+std::vector<int> MCsolution4(int N, std::vector<int> &A) {
+	int max = 0;
+
+	std::vector<int> rA(N, 0);
+	
+	for (int i : A) {
+		if (i <= N) {
+			++rA[i - 1];
+			if (rA[i - 1] > max)
+				max = rA[i - 1];
+		}
+		else if (i == N + 1) {
+			std::vector<int> r2(N, max);
+			rA = r2;
+		}
+	}
+
+	return rA;
+
+}
+

@@ -1,0 +1,56 @@
+// you can use includes, for example:
+// #include <algorithm>
+
+// you can write to stdout for debugging purposes, e.g.
+// cout << "this is a debug message" << endl;
+
+int solution(vector<int> &A) {
+    // write your code in C++14 (g++ 6.2.0)
+    int size = A.size();
+    std::vector<int> fib;
+    fib.push_back(0);
+    fib.push_back(1);
+    //cout << size << endl;
+    
+    if(size < 1)
+        return -1;
+    if(size == 1 && A[0] == 1)
+        return 1;
+    
+    int i = 2;
+    int loc = fib[i-2]+fib[i-1];
+    while(loc <= size+1){
+        fib.push_back(loc);
+        cout << loc << " ";
+        ++i;
+        loc = fib[i-2]+fib[i-1];
+    }
+    cout << endl;
+    
+    auto isFib = [fib](int pos){
+        for(int f:fib){
+            if(pos == f)
+                return f;
+        }
+        return 0;
+    };
+    
+    int oneStep = isFib(size+1);
+    cout << oneStep << endl;
+    if(oneStep)
+        return oneStep;
+    
+    int end = size - 1;
+    int min = 0;
+    for(end; end >= min; --end ){
+        if(!A[end]){
+            continue;
+        }
+        int pos = end+1-min;
+        int canStep = isFib(pos);
+        cout << "can: " << canStep << endl;
+        
+    }
+    
+    return -1;
+}

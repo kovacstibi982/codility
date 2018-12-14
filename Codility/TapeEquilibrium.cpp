@@ -71,3 +71,43 @@ int TEsolution(std::vector<int> &A) {
 
 	return diff;
 }
+
+int TEsolution2(std::vector<int> &A) {
+	// write your code in C++14 (g++ 6.2.0)
+	auto b = A.begin();
+	auto e = A.end();
+
+	if (A.size() == 2)
+		return abs(A[0] - A[1]);
+
+	auto fullLambda = [](auto b, auto e) {
+		int sum = 0;
+		for (; b != e; ++b) {
+			//cout << *b << " - " << *e << endl;
+			sum += *b;
+		}
+		//cout << sum << endl;
+		return sum;
+	};
+
+	int right = fullLambda(b, e);
+	int full = right;
+	int left = 0;
+
+	for (; b != (e - 1); ++b) {
+		left += *b;
+		right -= *b;
+		//cout << "left: " << left << " right: " << right << " = " << abs(left - right) << endl;
+		if (full < 0) {
+			if (abs(left - right) > full) {
+				full = abs(left - right);
+			}
+		}
+		else {
+			if (abs(left - right) < full)
+				full = abs(left - right);
+		}
+	}
+
+	return full;
+}

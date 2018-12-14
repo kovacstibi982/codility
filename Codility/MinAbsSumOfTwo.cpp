@@ -47,7 +47,40 @@ Copyright 2009–2018 by Codility Limited. All Rights Reserved. Unauthorized cop
 */
 
 /*
+Compilation successful.
 
+Example test:    [1, 4, -3]
+OK
+
+Example test:    [-8, 4, 5, -10, 3]
+OK
+
+Your test case:  [1000000000]
+Returned value: 2000000000
+
+Your test case:  []
+Returned value: 0
+
+Your test case:  [-1, 2, 6, 7]
+Output:
+-1
+2
+6
+7
+Returned value: 1000000000
+
+Your test case:  [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
+Output:
+1
+2
+3
+Returned value: 2
+
+Your test case:  [-4, 5]
+Output:
+-4
+5
+Returned value: 1
 */
 
 int MASOTsolution(std::vector<int> &A) {
@@ -82,4 +115,36 @@ int MASOTsolution(std::vector<int> &A) {
 	}
 
 	return min;
+}
+
+int MASOTsolution2(std::vector<int> &A) {
+	// write your code in C++14 (g++ 6.2.0)
+	std::sort(A.begin(), A.end());
+	std::set<int> setA(A.begin(), A.end());
+
+	//for(int s:setA)
+	//    cout << s << endl;
+
+	int size = setA.size();
+	//int min = 1000000000;
+
+	if (size == 0)
+		return 0;
+
+	if (size == 1)
+		return abs(2 * *setA.begin());
+
+	auto itAct = setA.begin();
+	auto itNext = setA.begin();
+
+	int setMin = abs(2 * *itAct);
+	for (; itAct != setA.end(); ++itAct) {
+		for (itNext = itAct; itNext != setA.end(); ++itNext) {
+			if (abs(*itAct + *itNext) < setMin)
+				setMin = abs(*itAct + *itNext);
+		}
+	}
+	//cout << "setMin: " << setMin << endl;
+	
+	return setMin;
 }
